@@ -1,0 +1,44 @@
+#include <stdio.h>  
+   #define size 100
+   void duplicateelement(int inputArray[],int elementcount)
+   {
+       int i,j,count=0;
+          
+    for(i = 0; i < elementcount ; i++) 
+    {  
+        for(j = i+1; j < elementcount; j++) 
+        {    
+            if(inputArray[i]==inputArray[j]) 
+            {
+            /* One Duplicate Element Found */ 
+                count++;  
+                break;  
+            }  
+        }  
+    }  
+   printf("Duplicate Element Count : %d\n", count); 
+   }
+int main() {  
+    int inputArray[size];  
+    int elementcount,i; 
+   
+    printf("Enter Number of Elements in Array\n");
+    scanf("%d", &elementcount);
+    printf("Enter %d numbers\n", elementcount);
+     
+    /* Read array elements */
+    for(i = 0; i < elementcount; i++){
+        scanf("%d", &inputArray[i]);
+    }
+   
+    /* 
+     * Take an element and compare it with all elements 
+     * after that till we find a duplicate element  
+     */ 
+    void (*fp)(int[],int)=duplicateelement;
+    fp(inputArray,elementcount);
+   
+     
+   
+    return 0;  
+}
