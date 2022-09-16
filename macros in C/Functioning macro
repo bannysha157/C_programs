@@ -1,0 +1,30 @@
+#include<stdio.h>
+#define square(a) a*a
+int main(){
+int b,c;
+printf("enter b element:");
+scanf("%d",&b);
+c=square(b);//replaces c=b*b before execution of program
+printf("%d",c);
+return 0;
+}
+
+o/p=enter b element is 4
+ 16
+ 
+ 
+2)program :  using functioning macro :
+
+ #include<stdio.h>
+#define equation (a*b)+c
+int main(){
+   int a,b,c,d;
+   printf("enter a,b,c elements:");
+   scanf("%d %d %d",&a,&b,&c);
+   d=equation;//replaces d=(a*b)+c before execution of program
+   printf("%d",d);
+   return 0;
+}
+
+o/p=enter a,b,c elements: 4 7 9
+37
