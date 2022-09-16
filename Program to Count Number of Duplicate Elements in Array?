@@ -30,15 +30,7 @@ int main() {
     for(i = 0; i < elementcount; i++){
         scanf("%d", &inputArray[i]);
     }
-   
-    /* 
-     * Take an element and compare it with all elements 
-     * after that till we find a duplicate element  
-     */ 
     void (*fp)(int[],int)=duplicateelement;
     fp(inputArray,elementcount);
-   
-     
-   
     return 0;  
 }
