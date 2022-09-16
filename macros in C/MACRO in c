@@ -1,0 +1,30 @@
+The macro in C language is known as the piece of code which can be replaced by the macro value.
+The macro is defined with the help of #define preprocessor directive and the macro doesn’t end with a semicolon(;).
+Macro is just a name given to certain values or expressions it doesn't point to any memory location.
+
+Whenever the compiler encounters the macro it replaces the macro name with the macro value. 
+Two macros could not have the same name.
+
+The syntax of the macro is as shown in the following figure. Here we will have the 3 components:
+
+#define - Preprocessor Directive
+PI - Macro Name
+3.14 - Macro Value
+
+
+
+
+TYPES OF MACRO:
+
+=>Object-like Macros.
+=>Function-like Macros.
+=>Predefined Macros in C:
+There are some predefined macros present in C. And it cannot be modified. Below are some predefined macros.
+
+MACRO 	   What it does
+__DATE__	Current date as MMM DD YYYY format.
+__TIME__	Current time as HH:MM:SS format.
+__FILE__	Contains current filename.
+__LINE__ 	Contains current line number.
+__STDC__	Defined as 1 when the compiler compiles.
+
