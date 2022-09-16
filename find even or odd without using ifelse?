@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+void evenodd(int num)
+{
+  (num % 2==0)?printf("%d is number is even",num):printf("%d is number is odd",num);  
+}
+int main()
+{
+    int num;
+    printf("enter the number");
+    scanf("%d",&num);
+  void (*fp)(int)=evenodd;
+  fp(num);
+    return 0;
+}
+    
